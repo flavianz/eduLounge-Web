@@ -1,0 +1,65 @@
+.logo-text-3 {
+    fill: none;
+    stroke: #004f96;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 40px;
+}
+
+.logo-text-2 {
+    fill: #63c9f8;
+}
+
+.logo-text-1 {
+    fill: var(--text);
+}
+.svgCheckmark {
+    fill:none;
+    stroke:var(--accent);
+    stroke-linecap:round;
+    stroke-miterlimit:10;
+    stroke-width:100px;
+}
+[data-theme="dark"] {
+    .svgCheckmark {
+        fill:none;
+        stroke: var(--text);
+        stroke-linecap:round;
+        stroke-miterlimit:10;
+        stroke-width:100px;
+    }
+}
+.simple-graphic-2 {
+    fill: none;
+    stroke: #004f96;
+    stroke-linecap: round;
+    stroke-width: 20px;
+}
+
+.simple-graphic-2, .simple-graphic-3, .simple-graphic-1 {
+    stroke-miterlimit: 10;
+}
+
+.simple-graphic-3 {
+    stroke-width: 10px;
+    stroke: var(--primary);
+    fill: var(--primary);
+}
+
+.simple-graphic-1 {
+    fill: #63c9f8;
+}
+
+.complex-graphic-1 {
+    fill: none;
+}
+
+.complex-graphic-1, .complex-graphic-2 {
+    stroke: var(--primary);
+    stroke-miterlimit: 10;
+    stroke-width: 10px;
+}
+
+.complex-graphic-2 {
+    fill: var(--primary);
+}

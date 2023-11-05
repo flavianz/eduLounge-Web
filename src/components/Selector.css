@@ -1,0 +1,37 @@
+.optionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin: 10px 10px 15px;
+}
+
+.optionContainerDisabled:hover .outerSelectionBox .selectorBox {
+    background-color: var(--secondary);
+}
+
+.outerSelectionBox {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.selectorBox {
+    width: 10px;
+    height: 10px;
+    border-width: 3px;
+    border-color: var(--background);
+    border-radius: 15px;
+    border-style: solid;
+    transition: background-color ease 0.2s;
+    background-color: var(--background);
+}
+
+.enabledSelector {
+    background-color: var(--primary);
+}

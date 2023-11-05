@@ -1,0 +1,45 @@
+.switchPanel {
+    width: 55px;
+    height: 24px;
+    margin: 10px;
+    border-width: 2px;
+    border-color: var(--primary);
+    border-style: solid;
+    padding: 5px;
+    border-radius: 35px;
+    display: grid;
+    align-items: center;
+    transition: padding-left ease 0.2s, padding-right ease 0.2s;
+    cursor: pointer;
+}
+
+.enabledSwitch {
+    background: var(--secondary);
+}
+
+.disabledSwitch {
+    background: var(--background);
+}
+.enabledSwitch:hover {
+    padding-right: 10px;
+    padding-left: 0;
+}
+.disabledSwitch:hover {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.switchPill {
+    height: 22px;
+    width: 22px;
+    background: var(--primary);
+    border-radius: 20px;
+}
+
+.enabledSwitchPill {
+    justify-self: flex-end;
+}
+
+.disabledSwitchPill {
+    justify-self: flex-start;
+}

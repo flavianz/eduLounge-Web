@@ -1,0 +1,68 @@
+button {
+    cursor: pointer;
+    transition: transform ease 0.2s, box-shadow ease 0.2s;
+}
+
+.positionHover:hover {
+    transform: translate(0, -5px);
+}
+
+.primaryShadowHover:hover {
+    box-shadow: 10px 10px 105px -5px var(--primary);
+}
+.secondaryShadowHover:hover {
+    box-shadow: 10px 10px 105px -5px var(--secondary);
+}
+
+.underline:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+}
+
+.small {
+    margin: 10px;
+    padding: 1.2em 2.5em;
+}
+
+.medium {
+    margin: 20px;
+    padding: 2em 5em;
+}
+
+.big {
+    margin: 30px;
+    padding: 2em 7.5em;
+}
+
+.full {
+    border-width: 0;
+    border-radius: 6px;
+    background: var(--primary);
+}
+.light {
+    border-width: 0;
+    border-radius: 6px;
+    background: var(--secondary);
+}
+
+.clear {
+    border-width: 0;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0);
+}
+
+p {
+    font-family: 'Lexend', sans-serif;
+}
+
+.smallText {
+    font-size: 0.9rem;
+}
+
+.mediumText {
+    font-size: 1.2rem;
+}
+
+.bigText {
+    font-size: 1.6rem;
+}

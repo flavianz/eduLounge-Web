@@ -1,0 +1,19 @@
+.linkButton {
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+    transition: transform ease 0.2s;
+}
+
+.linkButton:hover {
+    text-decoration: underline var(--accent);
+    transform: translate(0, -5px);
+}
+
+.smallLink {
+    padding: 1em;
+}
+
+.linkText {
+    font-size: 0.9rem;
+}

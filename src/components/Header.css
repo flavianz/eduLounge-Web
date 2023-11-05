@@ -1,0 +1,27 @@
+.headerContainer {
+    height: 6em;
+    border-width: 0;
+    border-color: var(--primary);
+    border-style: solid;
+    justify-content: space-between;
+    padding: 0 150px 0;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    margin-bottom: 50px;
+    background-color: var(--background);
+}
+
+.logo {
+    height: 3rem;
+}
+
+.linkContainer {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+}
+
+.link {
+    margin: 10px;
+}
