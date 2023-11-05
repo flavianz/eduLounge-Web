@@ -16,6 +16,7 @@
 .copyrightFooterText {
     color: var(--minimal);
     font-size: 15px;
+    white-space: nowrap;
 }
 .footerSectionContainer {
     flex: 1;
