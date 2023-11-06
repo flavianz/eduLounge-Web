@@ -2,10 +2,11 @@ import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-import ComponentOverview from "./sites/ComponentOverview";
-import Home from "./sites/Home";
-import NotFound from "./sites/NotFound";
-import Us from "./sites/Us";
+import ComponentOverview from "./sites/ComponentOverview/ComponentOverview";
+import Home from "./sites/Home/Home";
+import NotFound from "./sites/NotFound/NotFound";
+import Us from "./sites/Us/Us";
+import StudentLogin from "./sites/StudentLogin/StudentLogin";
 
 function App() {
     document.documentElement.setAttribute("data-theme", "light");
@@ -16,6 +17,7 @@ function App() {
             <Route path={"/"} Component={Home}></Route>
             <Route path={"/components"} Component={ComponentOverview}></Route>
             <Route path={"/about"} Component={Us}></Route>
+            <Route path={"/studentLogin"} Component={StudentLogin}></Route>
         </Routes>
     );
 }

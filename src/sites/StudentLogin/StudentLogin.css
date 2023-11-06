@@ -1,0 +1,20 @@
+.studentLoginPageContainer {
+    background: var(--background);
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.studentLoginTitle {
+    margin: 0;
+}
+
+.studentLoginContainer {
+    width: 60%;
+    height: 60vh;
+    background: var(--secondary);
+    border-radius: 20px;
+    padding: 40px;
+}

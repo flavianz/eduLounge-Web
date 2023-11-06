@@ -1,10 +1,10 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
-import StyledButton from "./StyledButton";
-import StyledLink from "./StyledLink";
-import Switch from "./Switch";
+import StyledButton from "./../StyledButton/StyledButton";
+import StyledLink from "./../StyledLink/StyledLink";
+import Switch from "./../Switch/Switch";
 import { useState } from "react";
-import SVGIcon from "../assets/images/svg/svg";
+import SVGIcon from "../../assets/images/svg/svg";
 export default function Header() {
     const [enabled, setEnabled] = useState(
         document.documentElement.getAttribute("data-theme") === "dark"

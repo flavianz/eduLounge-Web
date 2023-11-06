@@ -1,6 +1,6 @@
-import Header from "../components/Header";
+import Header from "../../components/Header/Header";
 import { Link } from "react-router-dom";
-import StyledButton from "../components/StyledButton";
+import StyledButton from "../../components/StyledButton/StyledButton";
 import "./NotFound.css";
 
 export default function NotFound() {
