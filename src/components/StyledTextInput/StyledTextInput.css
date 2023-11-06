@@ -18,21 +18,25 @@
     outline: none;
 }
 
-.styledTextInputSizemedium {
-    margin: 20px 10px;
-}
-.styledTextInputSizelarge {
-    margin: 30px 15px;
+.styledTextInputSize-medium {
+    margin: 15px 10px;
     font-size: 1.2em;
+}
+.styledTextInputSize-large {
+    margin: 20px 10px;
+    font-size: 1.5em;
     padding: 10px;
 }
-.styledTextInputSizesmall {
+.styledTextInputSize-small {
     margin: 10px 5px;
-    font-size: 0.8em;
 }
 
 .styledTextInputContainer {
     overflow: hidden;
+    margin: 10px 0;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
 }
 
 .styledTextInputContainerBorder {
@@ -40,4 +44,12 @@
     border-width: 2px;
     border-color: var(--accent);
     border-style: solid;
+}
+.styledInputPasswordChanger {
+    height: 40px;
+    width: 35px;
+    margin: 0 20px;
+}
+.styledInputPasswordChanger:hover {
+    cursor: pointer;
 }

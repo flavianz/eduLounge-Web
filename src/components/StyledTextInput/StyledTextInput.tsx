@@ -1,4 +1,6 @@
 import "./StyledTextInput.css";
+import {useState} from "react";
+import SVGIcon from "../../assets/images/svg/svg";
 
 export default function StyledTextInput({
     size = "medium",
@@ -15,6 +17,7 @@ export default function StyledTextInput({
     onChange: (result: string) => void;
     password?: boolean;
 }) {
+    const[passwordVisible, setPasswordVisible] = useState(false)
     return (
         <div
             className={
@@ -25,10 +28,13 @@ export default function StyledTextInput({
             <input
                 placeholder={placeholder}
                 value={value}
-                type={password ? "password" : "text"}
-                className={"styledInputInput styledTextInputSize" + size}
+                type={password && !passwordVisible? "password" : "text"}
+                className={"styledInputInput styledTextInputSize-" + size}
                 onChange={(result) => onChange(result.target.value)}
             ></input>
+            {password && <div onClick={() => setPasswordVisible(!passwordVisible)}>
+                <SVGIcon id={passwordVisible ? "hide-password" : "show-password"} className={"styledInputPasswordChanger"}></SVGIcon>
+            </div>}
         </div>
     );
 }
