@@ -16,15 +16,19 @@ h1, h2, h3, h4, h5 {
   --primary: #63C9F8;
   --secondary: #C4EBFF;
   --accent: #004f96;
-  --minimal: #acacc2
+  --minimal: #acacc2;
+  --light-gradient: linear-gradient(90deg, var(--secondary), var(--primary) 100%);
+  --dark-gradient: linear-gradient(90deg, var(--secondary), var(--primary) 100%);
 }
 [data-theme="dark"] {
   --text: #ecf2fe;
-  --background: #00000a;
+  --background: #0c0c1e;
   --primary: #58bdeb;
   --secondary: #004364;
   --accent: #8ecbff;
-  --minimal: #acacc2
+  --minimal: #acacc2;
+  --light-gradient: linear-gradient(90deg, var(--accent), var(--primary) 100%);
+  --dark-gradient: linear-gradient(105deg, var(--secondary), var(--background) 100%);
 }
 
 
