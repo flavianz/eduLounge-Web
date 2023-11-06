@@ -1,4 +1,4 @@
-import StyledButton from "../components/StyledButton";
+import StyledButton from "../../components/StyledButton/StyledButton";
 import "./ComponentOverview.css";
 
 export default function ComponentOverview() {

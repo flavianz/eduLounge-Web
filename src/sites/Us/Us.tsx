@@ -1,7 +1,7 @@
-import Header from "../components/Header";
+import Header from "../../components/Header/Header";
 import "./Us.css";
-import Footer from "../components/Footer";
-import SVGIcon from "../assets/images/svg/svg";
+import Footer from "../../components/Footer/Footer";
+import SVGIcon from "../../assets/images/svg/svg";
 
 export default function Us() {
     return (

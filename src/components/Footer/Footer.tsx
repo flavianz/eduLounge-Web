@@ -1,7 +1,7 @@
 import "./Footer.css";
 import { useState } from "react";
-import SVGIcon from "../assets/images/svg/svg";
-import StyledLink from "./StyledLink";
+import SVGIcon from "../../assets/images/svg/svg";
+import StyledLink from "./../StyledLink/StyledLink";
 export default function Footer() {
     const [mode, setMode] = useState(
         document.documentElement.getAttribute("data-theme")

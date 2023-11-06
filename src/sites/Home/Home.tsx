@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
-import Switch from "../components/Switch";
+import Header from "../../components/Header/Header";
+import Switch from "../../components/Switch/Switch";
 import "./Home.css";
 import { useState } from "react";
-import Checkbox from "../components/Checkbox";
-import Selector from "../components/Selector";
-import Footer from "../components/Footer";
+import Checkbox from "../../components/Checkbox/Checkbox";
+import Selector from "../../components/Selector/Selector";
+import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
     document.title = "Home | eduLounge";

@@ -1,5 +1,5 @@
 import "./Checkbox.css";
-import SVGIcon from "../assets/images/svg/svg";
+import SVGIcon from "../../assets/images/svg/svg";
 export default function Checkbox({
     enabled,
     onChange,
