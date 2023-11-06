@@ -3,9 +3,10 @@ export default function SVGIcon({
     id,
     className,
 }: {
-    id: "logo-text" | "checkmark" | "simple-graphic" | "complex-graphic";
+    id: "logo-text" | "checkmark" | "simple-graphic" | "complex-graphic" | "show-password" | "hide-password";
     className?: string;
 }) {
+    const defaultParams = {className: className}
     switch (id) {
         case "logo-text":
             return (
@@ -14,7 +15,7 @@ export default function SVGIcon({
                     data-name="Ebene 1"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1903.44 507.8"
-                    className={className}
+                    {...defaultParams}
                 >
                     <defs>
                         <style></style>
@@ -72,7 +73,7 @@ export default function SVGIcon({
         case "checkmark":
             return (
                 <svg
-                    className={className}
+                    {...defaultParams}
                     id="Ebene_1"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 506.21 509.14"
@@ -86,7 +87,7 @@ export default function SVGIcon({
         case "simple-graphic":
             return (
                 <svg
-                    className={className}
+                    {...defaultParams}
                     id="uuid-388a210e-a7ad-487e-a6a6-7bb9566ca8aa"
                     data-name="Ebene 1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +111,7 @@ export default function SVGIcon({
         case "complex-graphic":
             return (
                 <svg
-                    className={className}
+                    {...defaultParams}
                     id="uuid-9098db44-b95e-4261-8f73-9c361b693ad6"
                     data-name="Ebene 1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -126,5 +127,17 @@ export default function SVGIcon({
                     />
                 </svg>
             );
+        case "show-password":
+            return (
+                <svg id="uuid-1e9e23cf-9c45-4ec6-bd20-a902021fb390" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...defaultParams}>
+                <path className="show-password-1" d="m43.29,255.81c.05-61.63,115.05-120.78,212.71-120.82,97.66-.03,212.63,59.04,212.71,120.81.07,61.28-112.91,119.8-208.56,121.18-99.95,1.44-216.91-59-216.85-121.18Z"/>
+                <circle className="show-password-2" cx="256" cy="256" r="56"/>
+            </svg>);
+        case "hide-password":
+            return (
+                <svg id="uuid-13743c0d-d7f2-41ad-8111-78fdbf6b8846" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...defaultParams}>
+                <path className="hide-password-1" d="m207.37,283.79c-4.69-8.19-7.37-17.68-7.37-27.79,0-30.93,25.07-56,56-56,10.07,0,19.52,2.66,27.69,7.31"/>
+                <path className="hide-password-2" d="m139.11,352.22c-54.52-23.1-95.85-59.45-95.82-96.42.05-61.63,115.05-120.78,212.71-120.82,28.42,0,58.31,4.99,86.41,13.6m-145.42,221.85c20.99,4.48,42.44,6.85,63.16,6.55,95.65-1.38,208.64-59.9,208.56-121.18-.04-31.13-29.25-61.57-70.71-84.1m-142,140.3c30.93,0,56-25.07,56-56m86.15-163.15L86.57,404.43m225.43-148.43l-56,56"/>
+            </svg>)
     }
 }

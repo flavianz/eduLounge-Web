@@ -63,3 +63,25 @@
 .complex-graphic-2 {
     fill: var(--primary);
 }
+
+.show-password-1 {
+    stroke: var(--accent);
+    stroke-width: 30px;
+    fill: none;
+}
+.show-password-2 {
+    fill: var(--accent);
+    stroke-miterlimit: 10;
+    stroke-width: 30px;
+}
+.hide-password-1, hide-password-2 {
+    stroke-miterlimit: 10;
+    stroke-width: 30px;
+    fill: var(--accent);
+}
+.hide-password-2 {
+    stroke: var(--accent);
+    stroke-linecap: round;
+    stroke-width: 30px;
+    fill: none;
+}
