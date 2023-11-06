@@ -31,7 +31,7 @@ export default function Header() {
                     padding={"small"}
                     to={"/placeholder"}
                 />
-                <Link to={"/login"}>
+                <Link to={"/studentLogin"}>
                     <StyledButton
                         hover={{
                             position: false,
