@@ -51,6 +51,12 @@ button {
     background: rgba(0, 0, 0, 0);
 }
 
+.gradient {
+    border-width: 0;
+    border-radius: 6px;
+    background: var(--light-gradient)
+}
+
 p {
     font-family: 'Lexend', sans-serif;
 }

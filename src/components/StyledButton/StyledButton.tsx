@@ -5,7 +5,7 @@ export default function StyledButton({
     text = "{Button text}",
     hover = { position: true, shadow: true, underline: false },
 }: {
-    type?: "full" | "light" | "clear";
+    type?: "full" | "light" | "clear" | "gradient";
     size?: "small" | "medium" | "big";
     text?: string;
     hover?: { position: boolean; shadow: boolean; underline: boolean };

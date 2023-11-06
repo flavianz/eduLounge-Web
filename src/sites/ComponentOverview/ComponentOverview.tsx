@@ -8,6 +8,26 @@ export default function ComponentOverview() {
             <div className={"typeContainer"}>
                 <StyledButton
                     size={"small"}
+                    type={"gradient"}
+                    text={"Test Button Jumbo"}
+                    hover={{ position: true, shadow: false, underline: false }}
+                ></StyledButton>
+                <StyledButton
+                    size={"medium"}
+                    type={"gradient"}
+                    text={"Test Button Jumbo"}
+                    hover={{ position: false, shadow: true, underline: false }}
+                ></StyledButton>
+                <StyledButton
+                    size={"big"}
+                    type={"gradient"}
+                    text={"Test Button"}
+                    hover={{ position: true, shadow: true, underline: false }}
+                ></StyledButton>
+            </div>
+            <div className={"typeContainer"}>
+                <StyledButton
+                    size={"small"}
                     type={"full"}
                     text={"Test Button Jumbo"}
                     hover={{ position: true, shadow: false, underline: false }}
