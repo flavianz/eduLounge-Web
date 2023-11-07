@@ -1,0 +1,7 @@
+.studentDashboardMenuContainer {
+    width: 20%;
+    background-color: var(--secondary);
+    border-radius: 0 10px 10px 0;
+    height: 100vh;
+    padding: 0;
+}
