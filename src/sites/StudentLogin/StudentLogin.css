@@ -6,21 +6,37 @@
     justify-content: center;
     display: flex;
 }
-
 .studentLoginTitle {
-    margin: 10px 0 30px 0;
+    margin: 20px 0 0 0;
+    height: 15%;
+    flex: 1;
 }
-
+.formContainer {
+    flex: 2;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.submissionContainer {
+    flex: 2;
+    display: flex;
+}
 .studentLoginContainer {
     width: 40%;
     height: 60vh;
     background: var(--background);
     border-radius: 20px;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .forgotPassword {
-    justify-content: flex-end;
-    display: flex;
     width: 100%;
+    margin-left: 15px;
+}
+
+.studentLoginSubTitle {
+    margin: 15px;
 }
