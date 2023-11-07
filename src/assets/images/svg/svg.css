@@ -84,3 +84,14 @@
     stroke-linecap: round;
     fill: none;
 }
+.logo-notext1 {
+    fill: none;
+    stroke: #004f96;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 40px;
+}
+.logo-notext2 {
+    fill: #63c9f8;
+    stroke-width: 0;
+}
