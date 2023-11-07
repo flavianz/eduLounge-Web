@@ -65,22 +65,22 @@
 }
 
 .show-password-1 {
-    stroke: var(--text);
+    stroke: var(--minimal);
     stroke-width: 30px;
     fill: none;
 }
 .show-password-2 {
-    fill: var(--text);
+    fill: var(--minimal);
     stroke-miterlimit: 10;
     stroke-width: 30px;
 }
 .hide-password-1, .hide-password-2 {
     stroke-miterlimit: 10;
     stroke-width: 30px;
-    fill: var(--text);
+    fill: var(--minimal);
 }
 .hide-password-2 {
-    stroke: var(--text);
+    stroke: var(--minimal);
     stroke-linecap: round;
     fill: none;
 }
