@@ -34,7 +34,7 @@ export default function StudentLogin() {
                     <div className={"forgotPassword"}>
                         <StyledLink
                             text={"Passwort vergessen?"}
-                            to={"/resetPassword"}
+                            to={"/students/resetPassword"}
                             padding={"big"}
                         ></StyledLink>
                     </div>
