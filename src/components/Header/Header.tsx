@@ -7,7 +7,7 @@ import { useState } from "react";
 import SVGIcon from "../../assets/images/svg/svg";
 export default function Header() {
     const [enabled, setEnabled] = useState(
-        document.documentElement.getAttribute("data-theme") === "dark"
+        document.documentElement.getAttribute("data-theme") === "dark",
     );
     return (
         <div className="headerContainer">
@@ -31,7 +31,7 @@ export default function Header() {
                     padding={"small"}
                     to={"/placeholder"}
                 />
-                <Link to={"/studentLogin"}>
+                <Link to={"/students/login"}>
                     <StyledButton
                         hover={{
                             position: false,
@@ -48,7 +48,7 @@ export default function Header() {
                     onChange={(value) => {
                         document.documentElement.setAttribute(
                             "data-theme",
-                            value ? "dark" : "light"
+                            value ? "dark" : "light",
                         );
                         setEnabled(value);
                     }}
