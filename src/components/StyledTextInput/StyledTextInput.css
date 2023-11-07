@@ -10,7 +10,7 @@
 }
 
 .styledInputInput::placeholder{
-    color: var(--primary);
+    color: var(--minimal);
     font-family: 'Lexend', sans-serif;
 }
 
@@ -37,6 +37,7 @@
     flex-direction: row;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .styledTextInputContainerBorder {

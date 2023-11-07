@@ -9,8 +9,7 @@ export default function StyledTextInput({
     placeholder = "",
     onChange,
     password = false,
-    height = 50,
-    width = "100%",
+    style = {},
 }: {
     size: "small" | "medium" | "large";
     border?: boolean;
@@ -18,8 +17,7 @@ export default function StyledTextInput({
     placeholder?: string;
     onChange: (result: string) => void;
     password?: boolean;
-    height?: any;
-    width?: any;
+    style?: object;
 }) {
     const [passwordVisible, setPasswordVisible] = useState(false);
     return (
@@ -28,7 +26,7 @@ export default function StyledTextInput({
                 "styledTextInputContainer" +
                 (border ? " styledTextInputContainerBorder" : "")
             }
-            style={{ height: height, width: width }}
+            style={style}
         >
             <input
                 placeholder={placeholder}
