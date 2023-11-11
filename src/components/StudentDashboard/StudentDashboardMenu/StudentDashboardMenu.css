@@ -5,3 +5,25 @@
     height: 100vh;
     padding: 0;
 }
+.studentDashboardMenuLogoContainer {
+    max-width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.studentDashboardMenuLogo {
+    width: 4vw;
+    height: 4vw;
+}
+.studentDashboardMenuLogoText {
+    font-size: 2vw;
+    margin: 0 0 0 10px;
+}
+.studentDashboardMenuNavigationButtonIcon {
+    height: 2.5vw;
+    width: 2.5vw;
+}
+.studentDashboardMenuNavigationContainer {
+    padding: 20px;
+}

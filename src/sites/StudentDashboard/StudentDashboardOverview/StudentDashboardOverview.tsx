@@ -3,7 +3,7 @@ import StudentDashboardMenu from "../../../components/StudentDashboard/StudentDa
 
 export default function StudentDashboardOverview() {
     return (
-        <div className="studentDashboardMenuContainer">
+        <div className="studentDashboardContainer">
             <StudentDashboardMenu />
         </div>
     );
