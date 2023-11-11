@@ -95,3 +95,15 @@
     fill: #63c9f8;
     stroke-width: 0;
 }
+.subjects-1 {
+    stroke-width: 30px;
+}
+.subjects-2 {
+    stroke-width: 30px;
+}
+.subjects-2, .subjects-2 {
+    fill: none;
+    stroke: var(--text);
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}

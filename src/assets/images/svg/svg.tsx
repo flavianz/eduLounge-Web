@@ -10,7 +10,9 @@ export default function SVGIcon({
         | "simple-graphic"
         | "complex-graphic"
         | "show-password"
-        | "hide-password";
+        | "hide-password"
+        | "subjects"
+        | string;
     className?: string;
 }) {
     const defaultParams = { className: className };
@@ -181,6 +183,7 @@ export default function SVGIcon({
                     data-name="Ebene 1"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
+                    {...defaultParams}
                 >
                     <path
                         className="logo-notext1"
@@ -197,5 +200,26 @@ export default function SVGIcon({
                     <text />
                 </svg>
             );
+        case "subjects":
+            return (
+                <svg
+                    id="Ebene_1"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 500 500"
+                    {...defaultParams}
+                >
+                    <path
+                        className="subjects-2"
+                        d="m97.57,191.41c0-19.75,18.21-35.76,40.67-35.76m0,239.29c-22.46,0-40.67,16.01-40.67,35.76m0,0c0,19.75,18.21,35.76,40.67,35.76m0,0h223.31M97.57,191.41v239.29M187.57,44.47c-22.46,0-40.67,16.01-40.67,35.76m40.67-35.76h223.31m-223.31,239.29c-22.46,0-40.67,16.01-40.67,35.76m40.67-35.76h223.31m-263.97,35.76c0,19.75,18.21,35.76,40.67,35.76m0,0h223.31M146.91,80.22v239.29M410.88,44.47v239.29m-272.64,111.19h223.31m0-29.59v29.59"
+                    />
+                    <path
+                        className="subjects-1"
+                        d="m212.12,93.5h141.47m-141.47,26.44h85.23m-85.23,30.09l123.93-.43m76.83,135.16c-3.63,3.68-12.78,13.95-14.55,29.48-2.66,23.38,13.57,39.59,16.1,42.03m-51.19,39.76c-3.63,3.68-12.78,13.95-14.55,29.48-2.66,23.38,13.57,39.59,16.1,42.03"
+                    />
+                </svg>
+            );
+        default:
+            return <div {...defaultParams}></div>;
     }
 }
