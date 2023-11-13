@@ -1,0 +1,7 @@
+.studentDashboardContainer {
+    background-color: var(--background);
+    display: flex;
+}
+.studentDashboardOverviewContainer {
+    flex: 1;
+}

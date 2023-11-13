@@ -4,7 +4,8 @@ import StudentDashboardMenu from "../../../components/StudentDashboard/StudentDa
 export default function StudentDashboardOverview() {
     return (
         <div className="studentDashboardContainer">
-            <StudentDashboardMenu />
+            <StudentDashboardMenu pageID={"overview"}/>
+            <div className="studentDashboardOverviewContainer"></div>
         </div>
     );
 }
