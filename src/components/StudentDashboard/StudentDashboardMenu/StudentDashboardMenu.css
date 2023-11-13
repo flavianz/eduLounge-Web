@@ -1,5 +1,4 @@
 .studentDashboardMenuContainer {
-    width: 20%;
     background-color: var(--secondary);
     border-radius: 0 10px 10px 0;
     height: 100vh;
@@ -7,7 +6,7 @@
 }
 .studentDashboardMenuLogoContainer {
     max-width: 100%;
-    padding: 15px 30px;
+    padding: 25px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,15 +14,45 @@
 .studentDashboardMenuLogo {
     width: 4vw;
     height: 4vw;
+    max-height: 60px;
 }
 .studentDashboardMenuLogoText {
-    font-size: 2vw;
     margin: 0 0 0 10px;
 }
 .studentDashboardMenuNavigationButtonIcon {
-    height: 2.5vw;
-    width: 2.5vw;
+    height: 1.7vw;
+    width: 1.7vw;
+    margin-right: 1vw;
 }
 .studentDashboardMenuNavigationContainer {
-    padding: 20px;
+    padding: 40px;
+}
+.studentDashboardMenuNavigationButton {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1vw 2vw 1vw 2vw;
+    margin: 10px 0;
+    border-radius: 100px;
+    transition: background-color ease 0.3s;
+}
+.studentDashboardMenuNavigationButton:hover {
+    background: var(--tertiary);
+}
+.studentDashboardMenuNavigationButtonText {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.studentDashboardMenuNavigationButtonSelected {
+    background-color: var(--primary);
+
+    .studentDashboardMenuNavigationButtonText {
+        color: var(--background)
+    }
+    .studentDashboardMenuNavigationButtonIcon{
+        .home-2,  .home-1  {
+            stroke: var(--background);
+        }
+    }
 }

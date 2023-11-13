@@ -2,19 +2,24 @@ import "./StudentDashboardMenu.css";
 import SVGIcon from "../../../assets/images/svg/svg";
 import { Link } from "react-router-dom";
 
-export default function StudentDashboardMenu() {
+export default function StudentDashboardMenu({pageID}:{pageID:string}) {
     const links: {
         [key: string]: { link: string; icon: string; title: string };
     } = {
+        overview: {
+            link: "/students/dashboard",
+            icon: "home",
+            title: "Übersicht",
+        },
         subjects: {
             link: "/students/dashboard/subjects",
             icon: "subjects",
             title: "Fächer",
         },
         timetable: {
-            link: "/students/dashboard/timetable",
-            icon: "timetable",
-            title: "Stundenplan",
+            link: "/students/dashboard/agenda",
+            icon: "calendar",
+            title: "Agenda",
         },
         absences: {
             link: "/students/dashboard/absences",
@@ -37,14 +42,14 @@ export default function StudentDashboardMenu() {
                     return (
                         <Link
                             to={data.link}
-                            className="studentDashboardMenuNavigationButton"
+                            className={"studentDashboardMenuNavigationButton" + (id === pageID ? " studentDashboardMenuNavigationButtonSelected" : "")}
                             key={key}
                         >
                             <SVGIcon
                                 id={data.icon}
                                 className="studentDashboardMenuNavigationButtonIcon"
                             />
-                            <h5>{data.title}</h5>
+                            <p className="studentDashboardMenuNavigationButtonText">{data.title}</p>
                         </Link>
                     );
                 })}
