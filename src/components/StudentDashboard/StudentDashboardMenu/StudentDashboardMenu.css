@@ -3,6 +3,8 @@
     border-radius: 0 10px 10px 0;
     height: 100vh;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 .studentDashboardMenuLogoContainer {
     max-width: 100%;
@@ -10,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
 }
 .studentDashboardMenuLogo {
     width: 4vw;
@@ -46,13 +49,81 @@
 }
 .studentDashboardMenuNavigationButtonSelected {
     background-color: var(--primary);
-
-    .studentDashboardMenuNavigationButtonText {
-        color: var(--background)
-    }
-    .studentDashboardMenuNavigationButtonIcon{
-        .home-2,  .home-1  {
+    & * {
+        color: var(--background);
+        & path, & line, & rect, & polyline, & circle{
             stroke: var(--background);
         }
     }
+}
+.studentDashboardMenuAccountContainer {
+    padding: 1.5vw;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    text-decoration: none;
+}
+.studentDashboardMenuAccountIcon {
+    height: calc(1.3vw + 1.5rem);
+    width: calc(1.3vw + 1.5rem);
+    border-radius: 10px;
+}
+.studentDashboardMenuAccountUsername {
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+.studentDashboardMenuAccountRole {
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--minimal);
+    margin-top: 3px;
+}
+.studentDashboardMenuOpenOptionsIcon {
+    .arrow-top {
+        stroke: var(--accent);
+    }
+    width: .7vw;
+    height: .7vw;
+    transform: rotate(0deg);
+    transition: transform ease 0.2s;
+}
+.studentDashboardMenuAccountOptions {
+    transform: translate(0, 30px);
+    position: absolute;
+    bottom: calc(3vw + 2.7rem);
+    opacity: 0;
+    transition: opacity ease 0.2s, transform ease 0.2s;
+    border-radius: 15px;
+    padding: 0.5vw;
+}
+.studentDashboardMenuAccountContainer:hover .studentDashboardMenuAccountOptions{
+    opacity: 1;
+    background: var(--tertiary);
+    transform: translate(0, 0);
+}
+.studentDashboardMenuAccountOptionContainer {
+    height: 2rem;
+    width: 12rem;
+    padding: 0.3vw;
+    margin: 0.2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: ease 0.2s;
+    text-decoration: none;
+}
+.studentDashboardMenuAccountOptionIcon {
+    height: 1.3vw;
+    width: 1.3vw;
+    margin: 0 15px 0 5px;
+}
+.studentDashboardMenuAccountOptionContainer:hover {
+    background: var(--primary);
+}
+.studentDashboardMenuAccountContainer:hover .studentDashboardMenuOpenOptionsIcon {
+    transform: rotate(180deg);
 }
