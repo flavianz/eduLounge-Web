@@ -2,7 +2,7 @@ import "./StudentDashboardMenu.css";
 import SVGIcon from "../../../assets/images/svg/svg";
 import { Link } from "react-router-dom";
 
-export default function StudentDashboardMenu({pageID}:{pageID:string}) {
+export default function StudentDashboardMenu({ pageID }: { pageID: string }) {
     const links: {
         [key: string]: { link: string; icon: string; title: string };
     } = {
@@ -27,33 +27,107 @@ export default function StudentDashboardMenu({pageID}:{pageID:string}) {
             title: "Absenzen",
         },
     };
+    const accountOptions: {
+        [key: string]: { link: string; icon: string; title: string };
+    } = {
+        account: {
+            link: "/students/account",
+            icon: "account",
+            title: "Account",
+        },
+        settings: {
+            link: "/students/settings",
+            icon: "settings",
+            title: "Einstellungen",
+        },
+        logout: {
+            link: "/students/logout",
+            icon: "logout",
+            title: "Ausloggen",
+        },
+    };
     return (
         <div className="studentDashboardMenuContainer">
-            <div className="studentDashboardMenuLogoContainer">
+            <Link
+                className="studentDashboardMenuLogoContainer"
+                to={"students/dashboard"}
+            >
                 <SVGIcon
                     id={"logo-notext"}
                     className="studentDashboardMenuLogo"
                 />
                 <h4 className="studentDashboardMenuLogoText">Dashboard</h4>
-            </div>
+            </Link>
             <div className="studentDashboardMenuNavigationContainer">
                 {Object.keys(links).map((id, key) => {
                     const data = links[id];
                     return (
                         <Link
                             to={data.link}
-                            className={"studentDashboardMenuNavigationButton" + (id === pageID ? " studentDashboardMenuNavigationButtonSelected" : "")}
+                            className={
+                                "studentDashboardMenuNavigationButton" +
+                                (id === pageID
+                                    ? " studentDashboardMenuNavigationButtonSelected"
+                                    : "")
+                            }
                             key={key}
                         >
                             <SVGIcon
                                 id={data.icon}
                                 className="studentDashboardMenuNavigationButtonIcon"
                             />
-                            <p className="studentDashboardMenuNavigationButtonText">{data.title}</p>
+                            <p className="studentDashboardMenuNavigationButtonText">
+                                {data.title}
+                            </p>
                         </Link>
                     );
                 })}
             </div>
+            <div style={{ flex: 1 }}></div>
+            <Link
+                className="studentDashboardMenuAccountContainer"
+                to={"/students/account"}
+            >
+                <img
+                    src={require("../../../assets/images/graphics/sr2a322b96c6b10.webp")}
+                    alt=""
+                    className={"studentDashboardMenuAccountIcon"}
+                />
+                <div className="studentDashboardMenuAccountTextContainer">
+                    <p className={"studentDashboardMenuAccountUsername"}>
+                        [username]
+                    </p>
+                    <p className={"studentDashboardMenuAccountRole"}>
+                        Schüler/in
+                    </p>
+                </div>
+                <SVGIcon
+                    id="arrow-top"
+                    className="studentDashboardMenuOpenOptionsIcon"
+                ></SVGIcon>
+                <div className="studentDashboardMenuAccountOptions">
+                    {Object.keys(accountOptions).map((optionID, key) => {
+                        const option = accountOptions[optionID];
+                        return (
+                            <Link
+                                key={key}
+                                className="studentDashboardMenuAccountOptionContainer"
+                                to={option.link}
+                            >
+                                <SVGIcon
+                                    id={option.icon}
+                                    className={
+                                        "studentDashboardMenuAccountOptionIcon"
+                                    }
+                                ></SVGIcon>
+                                <p className="studentDashboardMenuAccountOptionText">
+                                    {option.title}
+                                </p>
+                            </Link>
+                        );
+                    })}
+                </div>
+            </Link>
         </div>
     );
 }
