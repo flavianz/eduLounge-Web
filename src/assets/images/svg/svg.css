@@ -167,5 +167,15 @@
     stroke: var(--text);
     stroke-linecap: round;
     stroke-linejoin: round;
+    stroke-width: 50px;
+}
+.logout {
+    fill: none;
+    stroke: var(--text);
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
     stroke-width: 25px;
+}
+.settings {
+    fill: var(--text);
 }
