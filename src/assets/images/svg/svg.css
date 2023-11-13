@@ -162,3 +162,10 @@
     stroke-width: 25px;
     stroke-linecap: round;
 }
+.arrow-top {
+    fill: none;
+    stroke: var(--text);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 25px;
+}

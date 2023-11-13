@@ -16,6 +16,7 @@ export default function SVGIcon({
         | "calendar"
         | "absences"
         | "account"
+        | "arrow-top"
         | string;
     className?: string;
 }) {
@@ -393,6 +394,31 @@ export default function SVGIcon({
                     <path
                         className="account"
                         d="m39.17,498.09c0-130.56,97.08-236.41,216.83-236.41s216.83,105.84,216.83,236.41"
+                    />
+                </svg>
+            );
+        case "arrow-top":
+            return (
+                <svg
+                    id="uuid-8c3b90d9-a4ba-4aac-900d-a264a9e8f1dd"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <line
+                        className="arrow-top"
+                        x1="13.88"
+                        y1="357.62"
+                        x2="256.09"
+                        y2="154.38"
+                    />
+                    <line
+                        className="arrow-top"
+                        x1="255.91"
+                        y1="154.38"
+                        x2="498.12"
+                        y2="357.62"
                     />
                 </svg>
             );
