@@ -155,3 +155,10 @@
 .absences-3 {
     stroke-width: 15px;
 }
+.account {
+    fill: none;
+    stroke: var(--text);
+    stroke-miterlimit: 10;
+    stroke-width: 25px;
+    stroke-linecap: round;
+}

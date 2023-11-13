@@ -12,7 +12,10 @@ export default function SVGIcon({
         | "show-password"
         | "hide-password"
         | "subjects"
-        | "home" | "calendar" | "absences"
+        | "home"
+        | "calendar"
+        | "absences"
+        | "account"
         | string;
     className?: string;
 }) {
@@ -203,42 +206,196 @@ export default function SVGIcon({
             );
         case "subjects":
             return (
-                <svg id="uuid-5f5420d4-3e9d-448d-9066-667e9fb71d65" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" {...defaultParams}>
-                    <path className="subjects-1" d="m124.93,457.92H36.06c-6.18,0-11.2-5.01-11.2-11.2V73.04c0-6.18,5.01-11.2,11.2-11.2h88.87c6.18,0,11.2,5.01,11.2,11.2v373.68c0,6.18-5.01,11.2-11.2,11.2Zm167.34-11.2V73.04c0-6.18-5.01-11.2-11.2-11.2h-88.87c-6.18,0-11.2,5.01-11.2,11.2v373.68c0,6.18,5.01,11.2,11.2,11.2h88.87c6.18,0,11.2-5.01,11.2-11.2Z"/>
-                    <rect className="subjects-1" x="344.1" y="57.96" width="111.27" height="396.08" rx="11.2" ry="11.2" transform="translate(-38.38 73.3) rotate(-10)"/>
-                    <path className="subjects-2" d="m98.34,371.84c0,10.43-8.46,18.89-18.89,18.89s-18.89-8.46-18.89-18.89,8.46-18.89,18.89-18.89,18.89,8.46,18.89,18.89Zm137.25-18.89c-10.43,0-18.89,8.46-18.89,18.89s8.46,18.89,18.89,18.89,18.89-8.46,18.89-18.89-8.46-18.89-18.89-18.89Zm179.27-5.11c-10.28,1.81-17.14,11.61-15.33,21.89,1.81,10.28,11.61,17.14,21.89,15.33,10.28-1.81,17.14-11.61,15.33-21.89-1.81-10.28-11.61-17.14-21.89-15.33Z"/>
-                    <path className="subjects-2" d="m57.05,126.92h48.29m-48.29,19.59h31.49m-31.14,18.89h40.94m114.86-38.49h48.29m-48.29,19.59h31.49m-31.14,18.89h40.94m99.07-36.28l47.55-8.38m-44.15,27.68l31.01-5.47m-27.39,24.01l40.32-7.11"/>
+                <svg
+                    id="uuid-5f5420d4-3e9d-448d-9066-667e9fb71d65"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 500 500"
+                    {...defaultParams}
+                >
+                    <path
+                        className="subjects-1"
+                        d="m124.93,457.92H36.06c-6.18,0-11.2-5.01-11.2-11.2V73.04c0-6.18,5.01-11.2,11.2-11.2h88.87c6.18,0,11.2,5.01,11.2,11.2v373.68c0,6.18-5.01,11.2-11.2,11.2Zm167.34-11.2V73.04c0-6.18-5.01-11.2-11.2-11.2h-88.87c-6.18,0-11.2,5.01-11.2,11.2v373.68c0,6.18,5.01,11.2,11.2,11.2h88.87c6.18,0,11.2-5.01,11.2-11.2Z"
+                    />
+                    <rect
+                        className="subjects-1"
+                        x="344.1"
+                        y="57.96"
+                        width="111.27"
+                        height="396.08"
+                        rx="11.2"
+                        ry="11.2"
+                        transform="translate(-38.38 73.3) rotate(-10)"
+                    />
+                    <path
+                        className="subjects-2"
+                        d="m98.34,371.84c0,10.43-8.46,18.89-18.89,18.89s-18.89-8.46-18.89-18.89,8.46-18.89,18.89-18.89,18.89,8.46,18.89,18.89Zm137.25-18.89c-10.43,0-18.89,8.46-18.89,18.89s8.46,18.89,18.89,18.89,18.89-8.46,18.89-18.89-8.46-18.89-18.89-18.89Zm179.27-5.11c-10.28,1.81-17.14,11.61-15.33,21.89,1.81,10.28,11.61,17.14,21.89,15.33,10.28-1.81,17.14-11.61,15.33-21.89-1.81-10.28-11.61-17.14-21.89-15.33Z"
+                    />
+                    <path
+                        className="subjects-2"
+                        d="m57.05,126.92h48.29m-48.29,19.59h31.49m-31.14,18.89h40.94m114.86-38.49h48.29m-48.29,19.59h31.49m-31.14,18.89h40.94m99.07-36.28l47.55-8.38m-44.15,27.68l31.01-5.47m-27.39,24.01l40.32-7.11"
+                    />
                 </svg>
             );
         case "home":
-            return <svg id="uuid-ca62b81e-d30a-41e5-bc99-c11e693b0be0" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...defaultParams}>
-                <path className="home-1" d="m451.13,217.01v253.33c0,10.44-8.45,18.88-18.88,18.88h-104.47c-10.44,0-18.88-8.45-18.88-18.88v-119.48c0-10.44-8.45-18.88-18.88-18.88h-68.02c-10.44,0-18.88,8.45-18.88,18.88v119.48c0,10.44-8.45,18.88-18.88,18.88h-104.47c-10.44,0-18.88-8.45-18.88-18.88v-255.8"/>
-                <g>
-                    <polyline className="home-1" points="60.87 210.43 60.87 203.9 80.03 186.08 255.76 22.77 431.48 186.08 451.13 204.34 451.13 212.36"/>
-                    <line className="home-2" x1="60.87" y1="203.9" x2="13.29" y2="248.12"/>
-                    <line className="home-2" x1="498.71" y1="248.56" x2="451.13" y2="204.34"/>
-                </g>
-            </svg>
+            return (
+                <svg
+                    id="uuid-ca62b81e-d30a-41e5-bc99-c11e693b0be0"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <path
+                        className="home-1"
+                        d="m451.13,217.01v253.33c0,10.44-8.45,18.88-18.88,18.88h-104.47c-10.44,0-18.88-8.45-18.88-18.88v-119.48c0-10.44-8.45-18.88-18.88-18.88h-68.02c-10.44,0-18.88,8.45-18.88,18.88v119.48c0,10.44-8.45,18.88-18.88,18.88h-104.47c-10.44,0-18.88-8.45-18.88-18.88v-255.8"
+                    />
+                    <g>
+                        <polyline
+                            className="home-1"
+                            points="60.87 210.43 60.87 203.9 80.03 186.08 255.76 22.77 431.48 186.08 451.13 204.34 451.13 212.36"
+                        />
+                        <line
+                            className="home-2"
+                            x1="60.87"
+                            y1="203.9"
+                            x2="13.29"
+                            y2="248.12"
+                        />
+                        <line
+                            className="home-2"
+                            x1="498.71"
+                            y1="248.56"
+                            x2="451.13"
+                            y2="204.34"
+                        />
+                    </g>
+                </svg>
+            );
         case "calendar":
-            return <svg id="uuid-0178dc96-4b95-4d66-be13-9fea24046e84" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...defaultParams}>
-                <rect className="calendar-3" x="39.19" y="67.59" width="433.62" height="431.16" rx="14.74" ry="14.74"/>
-                <path className="calendar-1" d="m118.17,32v68.69M393.83,32v68.69"/>
-                <line className="calendar-3" x1="43.5" y1="180.31" x2="464.5" y2="180.31"/>
-                <rect className="calendar-3" x="265.5" y="256.5" width="132" height="39" rx="19.5" ry="19.5"/>
-                <rect className="calendar-3" x="118.5" y="375.5" width="132" height="39" rx="19.5" ry="19.5" transform="translate(369 790) rotate(-180)"/>
-                <circle className="calendar-2" cx="151.5" cy="275.5" r="37"/>
-                <circle className="calendar-2" cx="360.5" cy="395.5" r="37"/>
-            </svg>
+            return (
+                <svg
+                    id="uuid-0178dc96-4b95-4d66-be13-9fea24046e84"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <rect
+                        className="calendar-3"
+                        x="39.19"
+                        y="67.59"
+                        width="433.62"
+                        height="431.16"
+                        rx="14.74"
+                        ry="14.74"
+                    />
+                    <path
+                        className="calendar-1"
+                        d="m118.17,32v68.69M393.83,32v68.69"
+                    />
+                    <line
+                        className="calendar-3"
+                        x1="43.5"
+                        y1="180.31"
+                        x2="464.5"
+                        y2="180.31"
+                    />
+                    <rect
+                        className="calendar-3"
+                        x="265.5"
+                        y="256.5"
+                        width="132"
+                        height="39"
+                        rx="19.5"
+                        ry="19.5"
+                    />
+                    <rect
+                        className="calendar-3"
+                        x="118.5"
+                        y="375.5"
+                        width="132"
+                        height="39"
+                        rx="19.5"
+                        ry="19.5"
+                        transform="translate(369 790) rotate(-180)"
+                    />
+                    <circle
+                        className="calendar-2"
+                        cx="151.5"
+                        cy="275.5"
+                        r="37"
+                    />
+                    <circle
+                        className="calendar-2"
+                        cx="360.5"
+                        cy="395.5"
+                        r="37"
+                    />
+                </svg>
+            );
         case "absences":
-            return <svg id="uuid-8a108b99-23bd-4bd0-9d34-4cca623434ee" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...defaultParams}>
-                <circle className="absences-2" cx="226.02" cy="168.9" r="111.8"/>
-                <path className="absences-1" d="m27.78,497.72c0-118.82,88.35-215.15,197.33-215.15s197.33,96.33,197.33,215.15"/>
-                <path className="absences-1" d="m316.95,50.39c17.1-21.98,43.8-36.11,73.81-36.11,51.62,0,93.47,41.85,93.47,93.47s-41.85,93.47-93.47,93.47c-5.84,0-11.56-.54-17.11-1.56"/>
-                <g>
-                    <line className="absences-3" x1="390.2" y1="57.11" x2="390.2" y2="111.64"/>
-                    <line className="absences-3" x1="419.13" y1="133.89" x2="390.2" y2="111.64"/>
-                </g>
-            </svg>
+            return (
+                <svg
+                    id="uuid-8a108b99-23bd-4bd0-9d34-4cca623434ee"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <circle
+                        className="absences-2"
+                        cx="226.02"
+                        cy="168.9"
+                        r="111.8"
+                    />
+                    <path
+                        className="absences-1"
+                        d="m27.78,497.72c0-118.82,88.35-215.15,197.33-215.15s197.33,96.33,197.33,215.15"
+                    />
+                    <path
+                        className="absences-1"
+                        d="m316.95,50.39c17.1-21.98,43.8-36.11,73.81-36.11,51.62,0,93.47,41.85,93.47,93.47s-41.85,93.47-93.47,93.47c-5.84,0-11.56-.54-17.11-1.56"
+                    />
+                    <g>
+                        <line
+                            className="absences-3"
+                            x1="390.2"
+                            y1="57.11"
+                            x2="390.2"
+                            y2="111.64"
+                        />
+                        <line
+                            className="absences-3"
+                            x1="419.13"
+                            y1="133.89"
+                            x2="390.2"
+                            y2="111.64"
+                        />
+                    </g>
+                </svg>
+            );
+        case "account":
+            return (
+                <svg
+                    id="uuid-8497cec3-50fc-4199-9c23-0678ab91ea59"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <circle
+                        className="account"
+                        cx="257"
+                        cy="136.76"
+                        r="122.85"
+                    />
+                    <path
+                        className="account"
+                        d="m39.17,498.09c0-130.56,97.08-236.41,216.83-236.41s216.83,105.84,216.83,236.41"
+                    />
+                </svg>
+            );
         default:
             return <div {...defaultParams}></div>;
     }
