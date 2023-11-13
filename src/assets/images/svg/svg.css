@@ -96,14 +96,62 @@
     stroke-width: 0;
 }
 .subjects-1 {
-    stroke-width: 30px;
+    stroke-width: 25px;
 }
-.subjects-2 {
-    stroke-width: 30px;
-}
-.subjects-2, .subjects-2 {
+
+.subjects-1, .subjects-2 {
     fill: none;
     stroke: var(--text);
     stroke-linecap: round;
     stroke-miterlimit: 10;
+}
+
+.subjects-2 {
+    stroke-width: 12px;
+}
+.home-1 {
+    stroke-linejoin: round;
+}
+
+.home-1, .home-2 {
+    fill: none;
+    stroke: var(--text);
+    stroke-linecap: round;
+    stroke-width: 25px;
+}
+
+.home-2 {
+    stroke-linejoin: bevel;
+}
+.calendar-1 {
+    stroke-linecap: round;
+}
+
+.calendar-1, .calendar-2, .calendar-3 {
+    stroke: var(--text);
+    stroke-miterlimit: 10;
+    stroke-width: 25px;
+}
+.calendar-2 {
+    fill: none;
+}
+.calendar-1, .calendar-3 {
+    fill: none;
+}
+.absences-1, .absences-2 {
+    stroke-width: 25px;
+}
+
+.absences-1, .absences-2, .absences-3 {
+    fill: none;
+    stroke: var(--text);
+    stroke-miterlimit: 10;
+}
+
+.absences-1, .absences-3 {
+    stroke-linecap: round;
+}
+
+.absences-3 {
+    stroke-width: 15px;
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-0178dc96-4b95-4d66-be13-9fea24046e84" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .uuid-777fffb6-f860-43a8-9cc6-01435dfafabd {
+        stroke-linecap: round;
+      }
+
+      .uuid-777fffb6-f860-43a8-9cc6-01435dfafabd, .uuid-91f8d12e-ad0f-46e7-8982-1e533c867dff, .uuid-190b5843-a13b-4382-b359-a856fa58a7d3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 25px;
+      }
+
+      .uuid-777fffb6-f860-43a8-9cc6-01435dfafabd, .uuid-190b5843-a13b-4382-b359-a856fa58a7d3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect class="uuid-190b5843-a13b-4382-b359-a856fa58a7d3" x="39.19" y="67.59" width="433.62" height="431.16" rx="14.74" ry="14.74"/>
+  <path class="uuid-777fffb6-f860-43a8-9cc6-01435dfafabd" d="m118.17,32v68.69M393.83,32v68.69"/>
+  <line class="uuid-190b5843-a13b-4382-b359-a856fa58a7d3" x1="43.5" y1="180.31" x2="464.5" y2="180.31"/>
+  <rect class="uuid-190b5843-a13b-4382-b359-a856fa58a7d3" x="265.5" y="256.5" width="132" height="39" rx="19.5" ry="19.5"/>
+  <rect class="uuid-190b5843-a13b-4382-b359-a856fa58a7d3" x="118.5" y="375.5" width="132" height="39" rx="19.5" ry="19.5" transform="translate(369 790) rotate(-180)"/>
+  <circle class="uuid-91f8d12e-ad0f-46e7-8982-1e533c867dff" cx="151.5" cy="275.5" r="37"/>
+  <circle class="uuid-91f8d12e-ad0f-46e7-8982-1e533c867dff" cx="360.5" cy="395.5" r="37"/>
+</svg>
