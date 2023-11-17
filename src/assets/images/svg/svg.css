@@ -179,3 +179,72 @@
 .settings {
     fill: var(--text);
 }
+.notification-with-1 {
+    fill: none;
+    stroke: var(--text);
+}
+
+.notification-with-1, .notification-with-2 {
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 25px;
+}
+
+.notification-with-2 {
+    fill: var(--error);
+    stroke: var(--error);
+}
+.notification-without-1 {
+    fill: none;
+    stroke: var(--text);
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 25px;
+}
+.french-flag-1 {
+    fill: #fff;
+}
+
+.french-flag-2 {
+    fill: #ed2939;
+}
+
+.french-flag-3 {
+    fill: #002654;
+}
+.german-flag-1 {
+    fill: #d00;
+}
+
+.german-flag-2 {
+    fill: #fc0;
+}
+.italien-flag-1 {
+    fill: #f4f9ff;
+}
+
+.italien-flag-2 {
+    fill: #008c45;
+}
+
+.italien-flag-3 {
+    fill: #cd212a;
+}
+.uk-flag-1 {
+    fill: #fff;
+}
+
+.uk-flag-2 {
+    fill: #c8102e;
+}
+
+.uk-flag-3 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 60px;
+}
+
+.uk-flag-4 {
+    fill: #012169;
+}

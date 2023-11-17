@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-e6afe974-4776-4416-bbf7-696f5e923d99" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .uuid-d283171b-9d0f-4d19-a76a-3a4742ecd6f2 {
+        fill: #fff;
+      }
+
+      .uuid-1a5253fc-be13-4af3-8dd9-72d6e36f4e75 {
+        fill: #c8102e;
+      }
+
+      .uuid-7e1d8498-598f-4f83-9206-92e7a1ba1621 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 60px;
+      }
+
+      .uuid-818a1682-0dd3-4717-b0b6-d4cdae64344c {
+        fill: #012169;
+      }
+    </style>
+  </defs>
+  <rect class="uuid-818a1682-0dd3-4717-b0b6-d4cdae64344c" y="91" width="512" height="330"/>
+  <line class="uuid-7e1d8498-598f-4f83-9206-92e7a1ba1621" x1="512" y1="91" y2="421"/>
+  <line class="uuid-7e1d8498-598f-4f83-9206-92e7a1ba1621" x1="512" y1="421" x2="0" y2="91"/>
+  <rect class="uuid-1a5253fc-be13-4af3-8dd9-72d6e36f4e75" x="108.14" y="17.31" width="20" height="327.05" transform="translate(-97.86 182.17) rotate(-57.2)"/>
+  <rect class="uuid-1a5253fc-be13-4af3-8dd9-72d6e36f4e75" x="388.87" y="168.41" width="20" height="327.05" transform="translate(-96.22 487.38) rotate(-57.2)"/>
+  <rect class="uuid-1a5253fc-be13-4af3-8dd9-72d6e36f4e75" x="372.87" y="-4.59" width="20" height="327.05" transform="translate(309.04 -248.99) rotate(57.2)"/>
+  <rect class="uuid-1a5253fc-be13-4af3-8dd9-72d6e36f4e75" x="82.87" y="209.41" width="20" height="327.05" transform="translate(356.02 92.84) rotate(57.2)"/>
+  <rect class="uuid-d283171b-9d0f-4d19-a76a-3a4742ecd6f2" x="218.5" y="91" width="75" height="330"/>
+  <rect class="uuid-d283171b-9d0f-4d19-a76a-3a4742ecd6f2" x="218.5" width="75" height="512" transform="translate(0 512) rotate(-90)"/>
+  <rect class="uuid-1a5253fc-be13-4af3-8dd9-72d6e36f4e75" x="231" y="91" width="50" height="330"/>
+  <rect class="uuid-1a5253fc-be13-4af3-8dd9-72d6e36f4e75" x="231" y="0" width="50" height="512" transform="translate(0 512) rotate(-90)"/>
+</svg>

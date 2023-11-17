@@ -19,6 +19,12 @@ export default function SVGIcon({
         | "arrow-top"
         | "settings"
         | "logout"
+        | "notifications-with-alert"
+        | "notification-without-alert"
+        | "german-flag"
+        | "french-flag"
+        | "italian-flag"
+        | "uk-flag"
         | string;
     className?: string;
 }) {
@@ -431,6 +437,307 @@ export default function SVGIcon({
                         y1="14.85"
                         x2="256.13"
                         y2="246.68"
+                    />
+                </svg>
+            );
+        case "notifications-with-alert":
+            return (
+                <svg
+                    id="uuid-07ba4966-4fe4-44e3-974d-04c3de20a358"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <g>
+                        <path
+                            className="notification-with-1"
+                            d="m142.54,171.02c6.68-65.53,54.82-116.36,113.21-116.36"
+                        />
+                        <path
+                            className="notification-with-1"
+                            d="m142.75,171.34l-13,102c-.06,4.98-.89,12.13-5,19-5.37,8.99-12.33,10.79-22,18-7.11,5.3-20.8,15.52-25,31-4,14.75,1.49,31.04,11,42,13.32,15.36,31.5,16.79,35,17"
+                        />
+                        <line
+                            className="notification-with-1"
+                            x1="123.75"
+                            y1="400.34"
+                            x2="255.75"
+                            y2="400.34"
+                        />
+                        <path
+                            className="notification-with-1"
+                            d="m281.35,57.87c-8.08-2.1-16.48-3.21-25.1-3.21"
+                        />
+                        <path
+                            className="notification-with-1"
+                            d="m370.12,178.17l12.13,95.17c.06,4.98.89,12.13,5,19,5.37,8.99,12.33,10.79,22,18,7.11,5.3,20.8,15.52,25,31,4,14.75-1.49,31.04-11,42-13.32,15.36-31.5,16.79-35,17"
+                        />
+                        <line
+                            className="notification-with-1"
+                            x1="388.25"
+                            y1="400.34"
+                            x2="256.25"
+                            y2="400.34"
+                        />
+                        <path
+                            className="notification-with-1"
+                            d="m289.75,423.34c0,18.78-15.22,34-34,34s-34-15.22-34-34"
+                        />
+                        <line
+                            className="notification-with-1"
+                            x1="221.75"
+                            y1="423.34"
+                            x2="221.75"
+                            y2="404.34"
+                        />
+                        <line
+                            className="notification-with-1"
+                            x1="289.75"
+                            y1="423.34"
+                            x2="289.75"
+                            y2="400.34"
+                        />
+                    </g>
+                    <circle
+                        className="notification-with-2"
+                        cx="368.5"
+                        cy="90.5"
+                        r="41"
+                    />
+                </svg>
+            );
+        case "notification-without-alert":
+            return (
+                <svg
+                    id="uuid-b0d3811c-35b0-4c2e-8efd-ba20c163ba0f"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <path
+                        className="notification-without-1"
+                        d="m142.54,171.02c6.68-65.53,54.82-116.36,113.21-116.36"
+                    />
+                    <path
+                        className="notification-without-1"
+                        d="m142.75,171.34l-13,102c-.06,4.98-.89,12.13-5,19-5.37,8.99-12.33,10.79-22,18-7.11,5.3-20.8,15.52-25,31-4,14.75,1.49,31.04,11,42,13.32,15.36,31.5,16.79,35,17"
+                    />
+                    <line
+                        className="notification-without-1"
+                        x1="123.75"
+                        y1="400.34"
+                        x2="255.75"
+                        y2="400.34"
+                    />
+                    <path
+                        className="notification-without-1"
+                        d="m369.46,171.02c-6.68-65.53-54.82-116.36-113.21-116.36"
+                    />
+                    <path
+                        className="notification-without-1"
+                        d="m369.25,171.34l13,102c.06,4.98.89,12.13,5,19,5.37,8.99,12.33,10.79,22,18,7.11,5.3,20.8,15.52,25,31,4,14.75-1.49,31.04-11,42-13.32,15.36-31.5,16.79-35,17"
+                    />
+                    <line
+                        className="notification-without-1"
+                        x1="388.25"
+                        y1="400.34"
+                        x2="256.25"
+                        y2="400.34"
+                    />
+                    <path
+                        className="notification-without-1"
+                        d="m289.75,423.34c0,18.78-15.22,34-34,34s-34-15.22-34-34"
+                    />
+                    <line
+                        className="notification-without-1"
+                        x1="221.75"
+                        y1="423.34"
+                        x2="221.75"
+                        y2="404.34"
+                    />
+                    <line
+                        className="notification-without-1"
+                        x1="289.75"
+                        y1="423.34"
+                        x2="289.75"
+                        y2="400.34"
+                    />
+                </svg>
+            );
+        case "french-flag":
+            return (
+                <svg
+                    id="uuid-c0df7d14-f75e-4a5e-9024-aa5a6881c765"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <rect
+                        className="french-flag-3"
+                        y="91.15"
+                        width="171"
+                        height="329.8"
+                    />
+                    <rect
+                        className="french-flag-1"
+                        x="170.32"
+                        y="91.35"
+                        width="171"
+                        height="329.8"
+                    />
+                    <rect
+                        className="french-flag-2"
+                        x="341"
+                        y="91.35"
+                        width="171"
+                        height="329.8"
+                    />
+                </svg>
+            );
+        case "german-flag":
+            return (
+                <svg
+                    id="uuid-837c215b-0888-4b51-aaf8-52d839e972b3"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <rect
+                        className="german-flag-1"
+                        x="0"
+                        y="170.92"
+                        width="512"
+                        height="170.16"
+                    />
+                    <rect y="91" width="512" height="110.21" />
+                    <rect
+                        className="german-flag-2"
+                        x="0"
+                        y="310.79"
+                        width="512"
+                        height="110.21"
+                    />
+                </svg>
+            );
+        case "italian-flag":
+            return (
+                <svg
+                    id="uuid-286eda83-5418-47c0-a226-40cd98593b57"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <rect
+                        className="italien-flag-3"
+                        x="-.18"
+                        y="91.31"
+                        width="171"
+                        height="329.8"
+                    />
+                    <rect
+                        className="italien-flag-1"
+                        x="170.14"
+                        y="91.5"
+                        width="171"
+                        height="329.8"
+                    />
+                    <rect
+                        className="italien-flag-2"
+                        x="340.82"
+                        y="91.5"
+                        width="171"
+                        height="329.8"
+                    />
+                </svg>
+            );
+        case "uk-flag":
+            return (
+                <svg
+                    id="uuid-e6afe974-4776-4416-bbf7-696f5e923d99"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <rect
+                        className="uk-flag-4"
+                        y="91"
+                        width="512"
+                        height="330"
+                    />
+                    <line className="uk-flag-3" x1="512" y1="91" y2="421" />
+                    <line
+                        className="uk-flag-3"
+                        x1="512"
+                        y1="421"
+                        x2="0"
+                        y2="91"
+                    />
+                    <rect
+                        className="uk-flag-2"
+                        x="108.14"
+                        y="17.31"
+                        width="20"
+                        height="327.05"
+                        transform="translate(-97.86 182.17) rotate(-57.2)"
+                    />
+                    <rect
+                        className="uk-flag-2"
+                        x="388.87"
+                        y="168.41"
+                        width="20"
+                        height="327.05"
+                        transform="translate(-96.22 487.38) rotate(-57.2)"
+                    />
+                    <rect
+                        className="uk-flag-2"
+                        x="372.87"
+                        y="-4.59"
+                        width="20"
+                        height="327.05"
+                        transform="translate(309.04 -248.99) rotate(57.2)"
+                    />
+                    <rect
+                        className="uk-flag-2"
+                        x="82.87"
+                        y="209.41"
+                        width="20"
+                        height="327.05"
+                        transform="translate(356.02 92.84) rotate(57.2)"
+                    />
+                    <rect
+                        className="uk-flag-1"
+                        x="218.5"
+                        y="91"
+                        width="75"
+                        height="330"
+                    />
+                    <rect
+                        className="uk-flag-1"
+                        x="218.5"
+                        width="75"
+                        height="512"
+                        transform="translate(0 512) rotate(-90)"
+                    />
+                    <rect
+                        className="uk-flag-2"
+                        x="231"
+                        y="91"
+                        width="50"
+                        height="330"
+                    />
+                    <rect
+                        className="uk-flag-2"
+                        x="231"
+                        y="0"
+                        width="50"
+                        height="512"
+                        transform="translate(0 512) rotate(-90)"
                     />
                 </svg>
             );
