@@ -94,13 +94,17 @@
     position: absolute;
     bottom: calc(3vw + 2.7rem);
     opacity: 0;
+    visibility: hidden;
     transition: opacity ease 0.2s, transform ease 0.2s;
     border-radius: 15px;
     padding: 0.5vw;
+    background: var(--tertiary);
+    box-shadow: 8px 14px 130px -9px rgba(0,0,0,0.2);
 }
 .studentDashboardMenuAccountContainer:hover .studentDashboardMenuAccountOptions{
     opacity: 1;
-    background: var(--tertiary);
+    visibility: visible;
+
     transform: translate(0, 0);
 }
 .studentDashboardMenuAccountOptionContainer {
