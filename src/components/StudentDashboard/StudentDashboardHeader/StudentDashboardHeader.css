@@ -1,0 +1,46 @@
+.studentDashboardHeaderContainer {
+    max-width: 100%;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: var(--secondary);
+    padding: 1.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.studentDashboardHeaderTitle {
+    margin: 5px;
+}
+.studentDashboardHeaderIconNotification {
+    height: 2vw;
+    width: 2vw;
+    margin: 5px;
+}
+.studentDashboardHeaderIconContainer {
+    display: flex;
+    align-items: center;
+}
+.studentDashboardHeaderLanguageSelectorContainer {
+    display: flex;
+    flex: 1;
+    margin: 0 15px;
+    align-items: center;
+    cursor: pointer;
+}
+.studentDashboardHeaderLanguageSelectorFlag {
+    width: 2vw;
+    height: 2vw;
+    margin: 5px;
+}
+.studentDashboardHeaderLanguageSelectorArrow {
+    width: 1vw;
+    height: 1vw;
+    margin: 0 10px ;
+    transform: rotate(180deg) translateY(-2px);
+}
+.studentDashboardHeaderSearchBarContainer {
+    background: var(--secondary);
+    height: 3vw;
+    width: 30vw;
+    border-radius: 20px;
+}
