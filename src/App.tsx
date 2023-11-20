@@ -9,6 +9,7 @@ import Us from "./sites/Us/Us";
 import StudentLogin from "./sites/StudentLogin/StudentLogin";
 import StudentRedirect from "./sites/StudentRedirect/StudentRedirect";
 import StudentDashboardOverview from "./sites/StudentDashboard/StudentDashboardOverview/StudentDashboardOverview";
+import StudentDashboardSubjects from "./sites/StudentDashboard/StudentDashboardSubjects/StudentDashboardSubjects";
 
 function App() {
     document.documentElement.setAttribute("data-theme", "light");
@@ -24,6 +25,10 @@ function App() {
             <Route
                 path={"/students/dashboard"}
                 Component={StudentDashboardOverview}
+            ></Route>
+            <Route
+                path={"/students/dashboard/subjects"}
+                Component={StudentDashboardSubjects}
             ></Route>
         </Routes>
     );
