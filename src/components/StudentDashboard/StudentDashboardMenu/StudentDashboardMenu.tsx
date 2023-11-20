@@ -1,8 +1,9 @@
 import "./StudentDashboardMenu.css";
 import SVGIcon from "../../../assets/images/svg/svg";
 import { Link } from "react-router-dom";
+import { sites } from "../../../constants";
 
-export default function StudentDashboardMenu({ pageID }: { pageID: string }) {
+export default function StudentDashboardMenu({ pageID }: { pageID: sites }) {
     const links: {
         [key: string]: { link: string; icon: string; title: string };
     } = {
@@ -19,7 +20,7 @@ export default function StudentDashboardMenu({ pageID }: { pageID: string }) {
         timetable: {
             link: "/students/dashboard/agenda",
             icon: "calendar",
-            title: "Agenda",
+            title: "Stundenplan",
         },
         absences: {
             link: "/students/dashboard/absences",

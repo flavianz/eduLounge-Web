@@ -7,7 +7,7 @@ export default function StudentDashboardOverview() {
         <div className="studentDashboardContainer">
             <StudentDashboardMenu pageID={"overview"} />
             <div className="studentDashboardOverviewContainer">
-                <StudentDashboardHeader />
+                <StudentDashboardHeader pageID={"overview"} />
             </div>
         </div>
     );
