@@ -1,6 +1,5 @@
 .studentDashboardHeaderContainer {
     width: calc(100% - 3.4vw);
-    border-bottom-style: solid;
     border-width: 1px;
     border-color: var(--secondary);
     padding: 1.7vw;
@@ -53,6 +52,7 @@
     border-style: none;
     font-size: 1rem;
     flex: 1;
+    color: var(--text);
 }
 .studentDashboardHeaderSearchBarInput:focus {
     outline: none;
