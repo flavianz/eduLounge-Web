@@ -111,6 +111,7 @@ export default function StudentDashboardMenu({ pageID }: { pageID: sites }) {
                         const option = accountOptions[optionID];
                         return (
                             <Link
+                                key={key}
                                 className="studentDashboardMenuAccountOptionContainer"
                                 to={option.link}
                             >
