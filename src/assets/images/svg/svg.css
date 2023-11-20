@@ -248,3 +248,13 @@
 .uk-flag-4 {
     fill: #012169;
 }
+.lens-1 {
+    stroke-linecap: round;
+}
+
+.lens-1, .lens-2 {
+    fill: none;
+    stroke: var(--text);
+    stroke-miterlimit: 10;
+    stroke-width: 35px;
+}

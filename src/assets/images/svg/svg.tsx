@@ -25,6 +25,7 @@ export default function SVGIcon({
         | "french-flag"
         | "italian-flag"
         | "uk-flag"
+        | "lens"
         | string;
     className?: string;
 }) {
@@ -738,6 +739,30 @@ export default function SVGIcon({
                         width="50"
                         height="512"
                         transform="translate(0 512) rotate(-90)"
+                    />
+                </svg>
+            );
+        case "lens":
+            return (
+                <svg
+                    id="uuid-24e70250-e534-4ba9-b44a-d0ce116a1dc4"
+                    data-name="Ebene 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    {...defaultParams}
+                >
+                    <circle
+                        className="lens-2"
+                        cx="316.84"
+                        cy="189.78"
+                        r="176.2"
+                    />
+                    <line
+                        className="lens-1"
+                        x1="197.75"
+                        y1="319.63"
+                        x2="18.96"
+                        y2="498.43"
                     />
                 </svg>
             );
