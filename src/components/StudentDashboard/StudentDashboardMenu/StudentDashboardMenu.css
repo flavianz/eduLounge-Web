@@ -1,10 +1,13 @@
 .studentDashboardMenuContainer {
-    background-color: var(--secondary);
-    border-radius: 0 10px 10px 0;
+    border-color: var(--secondary);
+    background-color: var(--light);
+    border-width: 1px;
+    border-radius: 0 20px 20px 0;
     height: 100vh;
     padding: 0;
     display: flex;
     flex-direction: column;
+
 }
 .studentDashboardMenuLogoContainer {
     max-width: 100%;
@@ -48,11 +51,11 @@
     font-weight: 500;
 }
 .studentDashboardMenuNavigationButtonSelected {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     & * {
-        color: var(--background);
+        color: var(--accent);
         & path, & line, & rect, & polyline, & circle{
-            stroke: var(--background);
+            stroke: var(--accent);
         }
     }
 }
@@ -98,8 +101,8 @@
     transition: opacity ease 0.2s, transform ease 0.2s;
     border-radius: 15px;
     padding: 0.5vw;
-    background: var(--tertiary);
-    box-shadow: 8px 14px 130px -9px rgba(0,0,0,0.2);
+    background: var(--secondary);
+    box-shadow: 8px 14px 130px -0px var(--shadow);
 }
 .studentDashboardMenuAccountContainer:hover .studentDashboardMenuAccountOptions{
     opacity: 1;
@@ -126,7 +129,7 @@
     margin: 0 15px 0 5px;
 }
 .studentDashboardMenuAccountOptionContainer:hover {
-    background: var(--primary);
+    background: var(--tertiary);
 }
 .studentDashboardMenuAccountContainer:hover .studentDashboardMenuOpenOptionsIcon {
     transform: rotate(180deg);
