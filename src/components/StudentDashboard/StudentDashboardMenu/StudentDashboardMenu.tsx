@@ -51,7 +51,7 @@ export default function StudentDashboardMenu({ pageID }: { pageID: sites }) {
         <div className="studentDashboardMenuContainer">
             <Link
                 className="studentDashboardMenuLogoContainer"
-                to={"students/dashboard"}
+                to={"/students/dashboard"}
             >
                 <SVGIcon
                     id={"logo-notext"}
