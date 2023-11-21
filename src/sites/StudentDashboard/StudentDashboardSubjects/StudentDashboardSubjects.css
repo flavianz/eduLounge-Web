@@ -1,7 +1,33 @@
 .studentDashboardContainer {
     background-color: var(--background);
     display: flex;
+    align-items: flex-start;
+}
+.studentDashboardSubjectsContainer {
+    flex: 1;
+    overflow-y: scroll;
+    height: auto;
 }
 .studentDashboardSubjectContainer {
-    flex: 1;
+    height: 4vw;
+    max-width: 100%;
+    background: var(--secondary);
+}
+.studentDashboardSubjectsDataContainer {
+    padding: 1.5vw 3.5vw;
+}
+.studentDashboardSubjectContainer {
+    margin: 1vw 0;
+    border-radius: 1vw;
+    padding: 0.5vw 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.studentDashboardSubjectName {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.studentDashboardSubjectAverage {
+    font-size: 1.5rem;
 }
