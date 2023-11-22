@@ -1,6 +1,6 @@
 import "./StudentDashboardHeader.css";
 import SVGIcon from "../../../assets/images/svg/svg";
-import { sites } from "../../../constants";
+import { sites } from "../../../scripts/constants";
 
 export default function StudentDashboardHeader({ pageID }: { pageID: sites }) {
     const titles = {
