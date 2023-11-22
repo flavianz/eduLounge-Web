@@ -258,3 +258,8 @@
     stroke-miterlimit: 10;
     stroke-width: 35px;
 }
+.details {
+    fill: var(--text);
+    stroke: var(--text);
+    stroke-miterlimit: 10;
+}
