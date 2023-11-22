@@ -263,3 +263,10 @@
     stroke: var(--text);
     stroke-miterlimit: 10;
 }
+.close {
+    fill: none;
+    stroke: var(--text);
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 50px;
+}
