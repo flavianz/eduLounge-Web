@@ -1,7 +1,7 @@
 import "./StudentDashboardMenu.css";
 import SVGIcon from "../../../assets/images/svg/svg";
 import { Link } from "react-router-dom";
-import { sites } from "../../../constants";
+import { sites } from "../../../scripts/constants";
 
 export default function StudentDashboardMenu({ pageID }: { pageID: sites }) {
     const links: {
