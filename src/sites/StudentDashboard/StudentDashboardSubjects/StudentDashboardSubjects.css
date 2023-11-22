@@ -2,22 +2,30 @@
     background-color: var(--background);
     display: flex;
     align-items: flex-start;
+    height: 100vh;
+    overflow: hidden;
 }
 .studentDashboardSubjectsContainer {
     flex: 1;
-    overflow-y: scroll;
-    height: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .studentDashboardSubjectContainer {
-    height: 4vw;
+    height: 3.7rem;
     max-width: 100%;
     background: var(--secondary);
+    display: flex;
 }
 .studentDashboardSubjectsDataContainer {
     padding: 1.5vw 3.5vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow-y: auto;
+    flex: 1;
 }
 .studentDashboardSubjectContainer {
-    margin: 1vw 0;
+    margin: 0.5vw 0.5vw;
     border-radius: 1vw;
     padding: 0.5vw 1.5vw;
     display: flex;
@@ -25,9 +33,22 @@
     align-items: center;
 }
 .studentDashboardSubjectName {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 350;
+    flex: 4;
 }
 .studentDashboardSubjectAverage {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    flex: 0.5;
+    text-align: center;
+    margin-left: 0.8vw;
+}
+.studentDashboardSubjectDetailsIcon {
+    height: 1.1rem;
+    width: 1.1rem;
+    cursor: pointer;
+    .details {
+        fill: var(--accent);
+        stroke: var(--accent);
+    }
 }
