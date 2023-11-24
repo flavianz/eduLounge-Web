@@ -30,7 +30,7 @@ export default function StudentDashboardHeader({ pageID }: { pageID: sites }) {
                 />
                 <div className="studentDashboardHeaderLanguageSelectorContainer">
                     <SVGIcon
-                        id="italian-flag"
+                        id="german-flag"
                         className="studentDashboardHeaderLanguageSelectorFlag"
                     />
                     <SVGIcon
