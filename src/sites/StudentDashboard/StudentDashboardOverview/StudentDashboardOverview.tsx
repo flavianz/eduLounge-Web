@@ -3,6 +3,7 @@ import StudentDashboardMenu from "../../../components/StudentDashboard/StudentDa
 import StudentDashboardHeader from "../../../components/StudentDashboard/StudentDashboardHeader/StudentDashboardHeader";
 
 export default function StudentDashboardOverview() {
+    document.title = "Übersicht | eduLounge";
     return (
         <div className="studentDashboardContainer">
             <StudentDashboardMenu pageID={"overview"} />
