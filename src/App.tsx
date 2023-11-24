@@ -10,6 +10,7 @@ import StudentLogin from "./sites/StudentLogin/StudentLogin";
 import StudentRedirect from "./sites/StudentRedirect/StudentRedirect";
 import StudentDashboardOverview from "./sites/StudentDashboard/StudentDashboardOverview/StudentDashboardOverview";
 import StudentDashboardSubjects from "./sites/StudentDashboard/StudentDashboardSubjects/StudentDashboardSubjects";
+import StudentDashboardSubjectDetails from "./sites/StudentDashboard/StudentDashboardSubjectDetails/StudentDashboardSubjectDetails";
 
 function App() {
     document.documentElement.setAttribute("data-theme", "light");
@@ -20,7 +21,7 @@ function App() {
             <Route path={"/"} Component={Home}></Route>
             <Route path={"/components"} Component={ComponentOverview}></Route>
             <Route path={"/about"} Component={Us}></Route>
-            <Route path={"/students"} Component={StudentRedirect}></Route>
+            <Route path={"/students/*"} Component={StudentRedirect}></Route>
             <Route path={"/students/login"} Component={StudentLogin}></Route>
             <Route
                 path={"/students/dashboard"}
@@ -29,6 +30,10 @@ function App() {
             <Route
                 path={"/students/dashboard/subjects"}
                 Component={StudentDashboardSubjects}
+            ></Route>
+            <Route
+                path={"/students/dashboard/subjects/details"}
+                Component={StudentDashboardSubjectDetails}
             ></Route>
         </Routes>
     );
