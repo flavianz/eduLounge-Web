@@ -5,7 +5,6 @@ import { subjects } from "../../../scripts/dummy";
 import SVGIcon from "../../../assets/images/svg/svg";
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import { findAllByDisplayValue } from "@testing-library/react";
 
 export default function StudentDashboardOverview() {
     document.title = "Noten | eduLounge";
