@@ -158,7 +158,6 @@
 }
 .studentDashboardSubjectDetailsIconExpandedText {
     color: var(--accent);
-    margin-right: 10px;
 }
 .studentDashboardSubjectDetailsIconExpandedIcon {
     height: 1.2vw;
@@ -167,7 +166,7 @@
         fill: var(--accent);
         stroke: var(--accent);
     }
-
+    margin-right: 1vw;
 }
 .studentDashboardSubjectDetailsIconsExpanded {
     display: flex;

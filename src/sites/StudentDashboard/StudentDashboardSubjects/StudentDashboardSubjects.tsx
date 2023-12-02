@@ -40,7 +40,7 @@ export default function StudentDashboardOverview() {
                                     onClick={() => {
                                         navigate(
                                             "/students/dashboard/subjects/details?s=" +
-                                                id,
+                                                id
                                         );
                                     }}
                                     className="studentDashboardSubjectDetailsIconContainer"
@@ -79,10 +79,16 @@ export default function StudentDashboardOverview() {
                                                     onClick={() => {
                                                         navigate(
                                                             "/students/dashboard/subjects/details?s=" +
-                                                                id,
+                                                                id
                                                         );
                                                     }}
                                                 >
+                                                    <SVGIcon
+                                                        id={"details"}
+                                                        className={
+                                                            "studentDashboardSubjectDetailsIconExpandedIcon"
+                                                        }
+                                                    />
                                                     <p
                                                         className={
                                                             "studentDashboardSubjectDetailsIconExpandedText"
@@ -90,19 +96,13 @@ export default function StudentDashboardOverview() {
                                                     >
                                                         Details
                                                     </p>
-                                                    <SVGIcon
-                                                        id={"details"}
-                                                        className={
-                                                            "studentDashboardSubjectDetailsIconExpandedIcon"
-                                                        }
-                                                    />
                                                 </div>
                                                 <div
                                                     className="studentDashboardSubjectDetailsIconContainer"
                                                     onClick={() => {
                                                         const index =
                                                             expandedSubjects.indexOf(
-                                                                id,
+                                                                id
                                                             );
                                                         if (index !== -1) {
                                                             const result =
@@ -112,10 +112,10 @@ export default function StudentDashboardOverview() {
                                                                             item !==
                                                                             id
                                                                         );
-                                                                    },
+                                                                    }
                                                                 );
                                                             setExpandedSubjects(
-                                                                result,
+                                                                result
                                                             );
                                                         }
                                                     }}
@@ -190,7 +190,7 @@ export default function StudentDashboardOverview() {
                                                                 }
                                                             >
                                                                 {new Date(
-                                                                    test.start,
+                                                                    test.start
                                                                 ).toLocaleDateString()}
                                                             </p>
                                                             <p
@@ -208,7 +208,7 @@ export default function StudentDashboardOverview() {
                                                             </p>
                                                         </a>
                                                     );
-                                                },
+                                                }
                                             )}
                                             <a
                                                 className="studentDashboardSubjectDetailsAverageContainer"
