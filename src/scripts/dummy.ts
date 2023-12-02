@@ -521,3 +521,47 @@ export const subjects: {
         },
     },
 };
+export const subject = {
+    tests: {
+        test1: {
+            name: "Spanish Quiz",
+            start: 1638846000000,
+            end: 1638849600000,
+            topics: "Verb Conjugation",
+            createdAt: 1638798000000,
+            mark: 82,
+            type: "exam",
+            weight: 0.5,
+        },
+        test2: {
+            name: "Geography Project",
+            start: 1638937200000,
+            end: 1638940800000,
+            topics: "Climate Zones",
+            createdAt: 1638889200000,
+            mark: 76,
+            type: "project",
+            weight: 0.5,
+        },
+        test3: {
+            name: "Art Exhibition",
+            start: 1638663600000,
+            end: 1638667200000,
+            topics: "Impressionism",
+            createdAt: 1638615600000,
+            mark: 68,
+            type: "presentation",
+            weight: 0.4,
+        },
+        test4: {
+            name: "Music Recital",
+            start: 1638754800000,
+            end: 1638758400000,
+            topics: "Classical Composers",
+            createdAt: 1638706800000,
+            mark: 72,
+            type: "presentation",
+            weight: 0.6,
+        },
+    }
+}
