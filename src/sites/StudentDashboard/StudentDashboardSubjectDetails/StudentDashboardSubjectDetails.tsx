@@ -10,9 +10,40 @@ export default function StudentDashboardSubjectDetails() {
             <div className="studentDashboardSubjectDetailsContainer">
                 <StudentDashboardHeader pageID={"subjects"} />
                 <div className="studentDashboardSubjectsDetailsContainer">
-                    - Nächste Tests - Alle Noten - Schnittverlaufsdiagramm -
-                    Schnittrechner
+                    <div
+                        style={{ flex: 5 }}
+                        className="studentDashboardSubjectsDetailsSideContainer"
+                    >
+                        <div className="studentDashboardSubjectDetailsMarksContainer">
+                            <h4
+                                className={
+                                    "studentDashboardSubjectDetailsMarksTitle"
+                                }
+                            >
+                                Noten
+                            </h4>
+                            <div className="studentDashboardSubjectDetailsMarksContainer">
+                                {}
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style={{ flex: 4 }}
+                        className="studentDashboardSubjectsDetailsSideContainer"
+                    >
+                        <div className="studentDashboardSubjectDetailsMarksContainer">
+                            <h4
+                                className={
+                                    "studentDashboardSubjectDetailsMarksTitle"
+                                }
+                            >
+                                Nächste Tests
+                            </h4>
+                        </div>
+                    </div>
                 </div>
+                - Nächste Tests - Alle Noten - Schnittverlaufsdiagramm -
+                Schnittrechner
             </div>
         </div>
     );
