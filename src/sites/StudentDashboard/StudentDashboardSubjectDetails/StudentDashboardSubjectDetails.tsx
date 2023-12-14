@@ -1,6 +1,7 @@
 import "./StudentDashboardSubjectDetails.css";
 import StudentDashboardMenu from "../../../components/StudentDashboard/StudentDashboardMenu/StudentDashboardMenu";
 import StudentDashboardHeader from "../../../components/StudentDashboard/StudentDashboardHeader/StudentDashboardHeader";
+import { subject } from "../../../scripts/dummy";
 
 export default function StudentDashboardSubjectDetails() {
     document.title = "Übersicht | eduLounge";
@@ -23,7 +24,11 @@ export default function StudentDashboardSubjectDetails() {
                                 Noten
                             </h4>
                             <div className="studentDashboardSubjectDetailsMarksContainer">
-                                {}
+                                {Object.keys(subject.tests).map(
+                                    (testID, key) => {
+                                        return <div key={key}></div>;
+                                    },
+                                )}
                             </div>
                         </div>
                     </div>
