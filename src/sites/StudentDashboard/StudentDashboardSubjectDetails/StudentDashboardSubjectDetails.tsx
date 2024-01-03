@@ -8,7 +8,10 @@ export default function StudentDashboardSubjectDetails() {
         <div className="studentDashboardContainer">
             <StudentDashboardMenu pageID={"subjects"} />
             <div className="studentDashboardSubjectDetailsContainer">
-                <StudentDashboardHeader pageID={"subjects"} />
+                <StudentDashboardHeader
+                    pageID={"subjectDetails"}
+                    titleExtension={"Deutsch"}
+                />
                 <div className="studentDashboardSubjectsDetailsContainer">
                     <div
                         style={{ flex: 5 }}
@@ -22,8 +25,33 @@ export default function StudentDashboardSubjectDetails() {
                             >
                                 Noten
                             </h4>
-                            <div className="studentDashboardSubjectDetailsMarksContainer">
-                                {}
+                            <div className="studentDashboardSubjectDetailsMarksDataContainer">
+                                <div className="studentDashboardSubjectDetailsMarksHeaderContainer">
+                                    <p
+                                        className="studentDashboardSubjectDetailsMarksTableHeaderItem"
+                                        style={{ flex: 3 }}
+                                    >
+                                        Datum
+                                    </p>
+                                    <p
+                                        className="studentDashboardSubjectDetailsMarksTableHeaderItem"
+                                        style={{ flex: 7 }}
+                                    >
+                                        Thema
+                                    </p>
+                                    <p
+                                        className="studentDashboardSubjectDetailsMarksTableHeaderItem"
+                                        style={{ flex: 2 }}
+                                    >
+                                        Note
+                                    </p>
+                                    <p
+                                        className="studentDashboardSubjectDetailsMarksTableHeaderItem"
+                                        style={{ flex: 2 }}
+                                    >
+                                        Gewichtung
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

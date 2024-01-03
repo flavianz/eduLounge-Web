@@ -1,1 +1,6 @@
-export type sites = "overview" | "subjects" | "timetable" | "absences";
+export type sites =
+    | "overview"
+    | "subjects"
+    | "timetable"
+    | "absences"
+    | "subjectDetails";

@@ -21,6 +21,7 @@ export default function StudentDashboardOverview() {
                         const expanded = expandedSubjects.includes(id);
                         return !expanded ? (
                             <div
+                                key={key}
                                 className={"studentDashboardSubjectContainer"}
                                 onClick={() => {
                                     setExpandedSubjects([

@@ -15,8 +15,24 @@
 .studentDashboardSubjectDetailsMarksContainer {
     background: var(--secondary);
     border-radius: 1vw;
-    padding: 1vw 2vw;
+    padding: 1vw 1.5vw;
 }
 .studentDashboardSubjectDetailsMarksTitle {
     margin: 0;
+}
+.studentDashboardSubjectDetailsBackLink {
+    margin: 0 3.5vw;
+    display: flex;
+}
+.studentDashboardSubjectDetailsMarksTableHeaderItem {
+    font-style: italic;
+    font-weight: 300;
+    margin: 0.3vw 0 0.15vw 0;
+}
+.studentDashboardSubjectDetailsMarksHeaderContainer {
+    display: flex;
+    width: 100%;
+}
+.studentDashboardSubjectDetailsMarksDataContainer {
+    padding: 1vw 0;
 }

@@ -2,16 +2,25 @@ import "./StudentDashboardHeader.css";
 import SVGIcon from "../../../assets/images/svg/svg";
 import { sites } from "../../../scripts/constants";
 
-export default function StudentDashboardHeader({ pageID }: { pageID: sites }) {
+export default function StudentDashboardHeader({
+    pageID,
+    titleExtension = "",
+}: {
+    pageID: sites;
+    titleExtension?: string;
+}) {
     const titles = {
         overview: "Übersicht",
         subjects: "Fächer",
         timetable: "Stundenplan",
         absences: "Absenzen",
+        subjectDetails: "",
     };
     return (
         <div className="studentDashboardHeaderContainer">
-            <h3 className="studentDashboardHeaderTitle">{titles[pageID]}</h3>
+            <h3 className="studentDashboardHeaderTitle">
+                {titles[pageID] + titleExtension}
+            </h3>
             <div className="studentDashboardHeaderSearchBarContainer">
                 <input
                     type="text"
