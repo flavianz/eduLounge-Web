@@ -1,9 +1,9 @@
-import { NavbarNested } from "../components/Navbar/NavbarNested.tsx";
+import Navbar from "../components/Navbar/Navbar.tsx";
 
 export default function Home() {
     return (
         <div>
-            <NavbarNested></NavbarNested>
+            <Navbar></Navbar>
         </div>
     );
 }

@@ -1,77 +1,77 @@
-import { JSX } from "react";
-import { Group, Box, Collapse, ThemeIcon, rem, NavLink } from "@mantine/core";
+import React, { useState } from "react";
 import {
-    IconCalendarStats,
-    IconChevronRight,
-    TablerIconsProps,
-} from "@tabler/icons-react";
+    Group,
+    Box,
+    Collapse,
+    ThemeIcon,
+    Text,
+    UnstyledButton,
+    rem,
+} from "@mantine/core";
+import { IconChevronRight } from "@tabler/icons-react";
 import classes from "./NavbarLinksGroup.module.css";
 
 interface LinksGroupProps {
-    icon?: (props: TablerIconsProps) => JSX.Element;
+    icon: React.FC<any>;
     label: string;
     initiallyOpened?: boolean;
-    link?: string;
-    children?: LinksGroupProps[];
+    links?: { label: string; link: string }[];
 }
 
-export function LinksGroup({ links }: { links: LinksGroupProps }) {
-    const getNavComponent = (links: LinksGroupProps) => {
-        return (
-            <NavLink
-                href={links.link}
-                label={links.label}
-                leftSection={<links.icon></links.icon>}
-            ></NavLink>
-        );
-    };
+export function LinksGroup({
+    icon: Icon,
+    label,
+    initiallyOpened,
+    links,
+}: LinksGroupProps) {
+    const hasLinks = Array.isArray(links);
+    const [opened, setOpened] = useState(initiallyOpened || false);
+    const items = (hasLinks ? links : []).map((link) => (
+        <Text<"a">
+            component="a"
+            className={classes.link}
+            href={link.link}
+            key={link.label}
+            onClick={(event) => event.preventDefault()}
+        >
+            {link.label}
+        </Text>
+    ));
+
     return (
         <>
-            <NavLink
-                onClick={() => setOpened((o) => !o)}
-                className={classes.control}
-            >
-                <Group justify="space-between" gap={0}>
-                    <Box style={{ display: "flex", alignItems: "center" }}>
-                        <ThemeIcon variant="light" size={30}>
-                            <Icon style={{ width: rem(18), height: rem(18) }} />
-                        </ThemeIcon>
-                        <Box ml="md">{label}</Box>
-                    </Box>
-                    {hasLinks && (
-                        <IconChevronRight
-                            className={classes.chevron}
-                            stroke={1.5}
-                            style={{
-                                width: rem(16),
-                                height: rem(16),
-                                transform: opened
-                                    ? "rotate(-90deg)"
-                                    : "rotate(90deg)",
-                            }}
-                        />
-                    )}
-                </Group>
-            </NavLink>
-            {hasLinks ? <Collapse in={opened}>{items}</Collapse> : null}
+            <Box mih={220} p="md" w={"100%"}>
+                <UnstyledButton
+                    w={"100%"}
+                    onClick={() => setOpened((o) => !o)}
+                    className={classes.control}
+                >
+                    <Group justify="space-between" gap={0} w={"100%"}>
+                        <Box style={{ display: "flex", alignItems: "center" }}>
+                            <ThemeIcon variant="light" size={30}>
+                                <Icon
+                                    style={{ width: rem(18), height: rem(18) }}
+                                />
+                            </ThemeIcon>
+                            <Box ml="md">{label}</Box>
+                        </Box>
+                        {hasLinks && (
+                            <IconChevronRight
+                                className={classes.chevron}
+                                stroke={1.5}
+                                style={{
+                                    width: rem(16),
+                                    height: rem(16),
+                                    transform: opened
+                                        ? "rotate(-90deg)"
+                                        : "none",
+                                }}
+                            />
+                        )}
+                    </Group>
+                </UnstyledButton>
+                {hasLinks ? <Collapse in={opened}>{items}</Collapse> : null}
+            </Box>
         </>
-    );
-}
-
-const mockdata = {
-    label: "Releases",
-    icon: IconCalendarStats,
-    links: [
-        { label: "Upcoming releases", link: "/" },
-        { label: "Previous releases", link: "/" },
-        { label: "Releases schedule", link: "/" },
-    ],
-};
-
-export function NavbarLinksGroup() {
-    return (
-        <Box mih={220} p="md">
-            <LinksGroup {...mockdata} />
-        </Box>
     );
 }

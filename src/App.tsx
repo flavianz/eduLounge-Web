@@ -5,7 +5,7 @@ import Home from "./sites/Home.tsx";
 
 function App() {
     return (
-        <MantineProvider defaultColorScheme={"dark"}>
+        <MantineProvider>
             <BrowserRouter>
                 <Routes>
                     <Route path={"/"}>
