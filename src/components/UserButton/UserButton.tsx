@@ -1,4 +1,3 @@
-export default function UserButton()
-{
-    return <div></div>
+export default function UserButton() {
+    return <div></div>;
 }
