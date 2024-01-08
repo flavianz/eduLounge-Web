@@ -26,12 +26,12 @@ export function LinksGroup({
 }: LinksGroupProps) {
     const hasLinks = Array.isArray(links);
     const [opened, setOpened] = useState(initiallyOpened || false);
-    const items = (hasLinks ? links : []).map((link) => (
+    const items = (hasLinks ? links : []).map((link, key) => (
         <Text<"a">
             component="a"
             className={classes.link}
             href={link.link}
-            key={link.label}
+            key={key}
             onClick={(event) => event.preventDefault()}
         >
             {link.label}
