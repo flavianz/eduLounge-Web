@@ -19,3 +19,14 @@ export async function testAccessToken() {
         withCredentials: true,
     });
 }
+export async function getSubjects() {
+    return await axios.get(server + "/getSubjects", { withCredentials: true });
+}
+
+export async function getMarks(subject_id: string) {
+    return await axios.post(
+        server + "/getMarks",
+        { subject_id },
+        { withCredentials: true }
+    );
+}
