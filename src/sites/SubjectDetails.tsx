@@ -8,7 +8,6 @@ export default function SubjectDetails() {
     const queryClient = useQueryClient();
     const navigate = useNavigate();
     const { id } = useParams();
-    console.log(useParams());
     if (!id) {
         navigate("/subjects");
         return;
@@ -43,7 +42,7 @@ export default function SubjectDetails() {
                         if (isNaN(date.getTime())) {
                             dateText = "Fehler";
                         } else {
-                            dateText = date.toLocaleString();
+                            dateText = date.toLocaleDateString();
                         }
                         return (
                             <div

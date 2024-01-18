@@ -26,9 +26,7 @@ export default function Subjects() {
                         return (
                             <div key={key}>
                                 <p>{subject.name}</p>
-                                <a
-                                    href={`/subjects/details/${subject.subject_id}`}
-                                >
+                                <a href={`/subjects/${subject.subject_id}`}>
                                     Details
                                 </a>
                             </div>

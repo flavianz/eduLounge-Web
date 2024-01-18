@@ -18,7 +18,7 @@ function App() {
                             <Route path={"login"} element={<Login />} />
                             <Route path={"subjects"} element={<Subjects />} />
                             <Route
-                                path={"subjects/details/:id"}
+                                path={"subjects/:id"}
                                 element={<SubjectDetails />}
                             />
                         </Route>
