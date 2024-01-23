@@ -15,17 +15,19 @@ export async function login(username: string, password: string) {
     ).status;
 }
 export async function testAccessToken() {
-    return await axios.get(server + "/testAccessToken", {
+    return await axios.get(server + "/students/testAccessToken", {
         withCredentials: true,
     });
 }
 export async function getSubjects() {
-    return await axios.get(server + "/getSubjects", { withCredentials: true });
+    return await axios.get(server + "/students/getSubjects", {
+        withCredentials: true,
+    });
 }
 
 export async function getMarks(subject_id: string) {
     return await axios.post(
-        server + "/getMarks",
+        server + "/students/getMarks",
         { subject_id },
         { withCredentials: true }
     );
